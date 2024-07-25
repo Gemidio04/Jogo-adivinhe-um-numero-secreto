@@ -7,9 +7,9 @@ public class Tentativas {
         switch (tentativas){
             case 3 -> Dicas.segundaDica(numeroAleatorio);
             case 2 -> Dicas.terceiraDica(numeroAleatorio);
-            case 1 -> System.out.println(Dicas.quartaDica(numeroAleatorio));
+            case 1 -> Dicas.quartaDica(numeroAleatorio);
         } if(tentativas > 0 ){
-            System.out.println("\nTENTE NOVAMENTE");
+            System.out.println("\n\nTENTE NOVAMENTE");
         }
     }
 }

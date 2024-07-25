@@ -8,34 +8,35 @@ public class Dicas {
 
     public static void segundaDica(int numero){
         primeiraDica();
-        System.out.println("SEGUNDA DICA: ");
+        System.out.print("SEGUNDA DICA: ");
         if(numero > 0){
-            System.out.println("O NÚMERO É POSITIVO!");
+            System.out.print("O NÚMERO É POSITIVO!");
         }else if (numero < 0){
-            System.out.println("O NÚMERO É NEGATIVO!");
+            System.out.print("O NÚMERO É NEGATIVO!");
         }else{
-            System.out.println("O NÚMERO É NEUTRO!");
+            System.out.print("O NÚMERO É NEUTRO!");
         }
     }
     public static void terceiraDica(int numero){
        segundaDica(numero);
-       System.out.println("TERCEIRA DICA: ");
+       System.out.print("\nTERCEIRA DICA: ");
        if(numero % 2 == 0){
-       System.out.println("O NÚMERO É PAR!");
+       System.out.print("O NÚMERO É PAR!");
        }else{
-           System.out.println("O NÚMERO É ÍMPAR!");
+           System.out.print("O NÚMERO É ÍMPAR!");
        }
     }
-    public static String quartaDica(int numero){
+    public static void quartaDica(int numero){
         terceiraDica(numero);
+        System.out.print("\nQUARTA E ÚLTIMA DICA: ");
         if (numero >= -30 && numero < -10) {
-            return "O NÚMERO ESTÁ NO INTERVALO [-30, -10]!";
+            System.out.print("O NÚMERO ESTÁ NO INTERVALO [-30, -10]!");
         } else if (numero >= -10 && numero < 10) {
-            return "O NÚMERO ESTÁ NO INTERVALO [-10, 10]!";
+            System.out.print("O NÚMERO ESTÁ NO INTERVALO [-10, 10]!");
         } else if (numero >= 10 && numero < 30) {
-            return "O NÚMERO ESTÁ NO INTERVALO [10, 30]!";
+            System.out.print("O NÚMERO ESTÁ NO INTERVALO [10, 30]!");
         } else {
-            return "O NÚMERO ESTÁ FORA DOS INTERVALOS DEFINIDOS!";
+            System.out.print("O NÚMERO ESTÁ FORA DOS INTERVALOS DEFINIDOS!");
         }
     }
 }
